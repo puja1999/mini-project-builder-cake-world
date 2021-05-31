@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-<script src="/script.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cake World</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+    <div class="layer1"></div>
+
+    <div class="layer2">
+      <div class="image1">
+        <img src="./assets/cake.png" alt="cake" width="120px" height="70px" />
+        <p class="cake">Cake World</p>
+      </div>
+
+      <div class="template">
+        <div class="template1">
+          <img
+            src="./assets/list_template.png"
+            alt="template1"
+            width="200px"
+            height="170px"
+          />
+          <div class="items" id="item1">
+            <h4>PRICES</h4>
+            <p>Chocolate ------300</p>
+            <p>Strawberry -----100</p>
+            <p>Butterscotch ---200</p>
+            <p>Vannila ---------250</p>
+            <p>Redvelvet ------350</p>
+          </div>
+        </div>
+
+        <div class="cake-candle">
+          <div class="candles">
+            <img
+              id="candle"
+              src="./assets/candle.png"
+              alt="candle"
+              width="40px"
+              height="30px"
+            />
+          </div>
+          <div id="vanilla-cake" class="cake1"></div>
+          <div id="red-cake" class="cake2"></div>
+          <div id="choco-cake" class="cake3"></div>
+          <div id="scotch-cake" class="cake4"></div>
+          <div id="straw-cake" class="cake5"></div>
+        </div>
+
+        <div class="template2">
+          <img
+            src="./assets/list_template.png"
+            alt="template2"
+            width="200px"
+            height="180px"
+          />
+
+          <div class="items" id="item2">
+            <h4>BILL</h4>
+            <p id="ChocolateBill"></p>
+            <p id="StrawberryBill"></p>
+            <p id="ButterscotchBill"></p>
+            <p id="VanillaBill"></p>
+            <p id="RedvelvetBill"></p>
+            <p id="total" class="total"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="layer3">
+      <div class="nav-items">
+        <ul>
+          <li id="chocolate" onclick="addChocolate()">Chocolate</li>
+          <li id="strawberry" onclick="addStrawberry()">Strawberry</li>
+          <li id="butterscotch" onclick="addButterscotch()">Butterscotch</li>
+          <li id="vanilla" onclick="addVanilla()">Vannila</li>
+          <li id="redvelvet" onclick="addRedvelvet()">Redvelvet</li>
+          <li class="buy" id="buy" onclick="buy()">BUY</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <script src="/script.js"></script>
+  </body>
 </html>
